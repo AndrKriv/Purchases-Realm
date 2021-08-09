@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="605dp"
+        android:layout_x="0dp"
+        android:layout_y="87dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="605dp"
+        android:layout_x="201dp"
+        android:layout_y="87dp"
+        android:text="Delete" />
+
+
+    <EditText
+        android:id="@+id/date"
+        android:inputType="numberDecimal"
+        android:layout_width="111dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="665dp"
+        android:layout_x="1dp"
+        android:layout_y="0dp"
+        android:hint="Дата"
+        android:maxWidth="60dp" />
+
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="197dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="665dp"
+        android:layout_x="112dp"
+        android:layout_y="0dp"
+        android:hint="Место"
+        android:maxWidth="60dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:inputType="numberDecimal"
+        android:layout_width="104dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="665dp"
+        android:layout_x="309dp"
+        android:layout_y="2dp"
+        android:hint="Цена"
+        android:maxWidth="60dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="411dp"
+        android:layout_height="595dp"
+
+        android:layout_x="0dp"
+        android:layout_y="136dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</AbsoluteLayout>
